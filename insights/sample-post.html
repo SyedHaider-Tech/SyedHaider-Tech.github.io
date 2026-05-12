@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The hidden cost curves of green hydrogen at scale — Your Name</title>
+  <meta name="description" content="Most LCOH models ignore three structural factors that dominate first-of-a-kind plant economics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,0..100;1,9..144,100..900,0..100&family=DM+Sans:opsz,wght@9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">Your Name</a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../insights.html" class="active">Insights</a></li>
+        <li><a href="../frameworks.html">Frameworks</a></li>
+        <li><a href="../white-papers.html">White Papers</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==============================================================
+       POST TEMPLATE — duplicate this file to add new insight posts.
+       Update: <title>, meta description, post-meta, h1, and content.
+       Update parent insights.html with a matching insight-card entry.
+       ============================================================== -->
+
+  <header class="post-header">
+    <div class="container-content">
+      <div class="post-meta fade-up">
+        <span class="category">Techno-Economic Analysis</span>
+        <span>10 min read</span>
+        <span>November 2025</span>
+      </div>
+      <h1 class="fade-up">The hidden cost curves of green<br>hydrogen <em>at scale</em>.</h1>
+      <p class="lead fade-up" style="margin-top: 1.5rem;">Most LCOH models published in 2023–25 converge on the same headline number — but they diverge wildly on three structural factors that dominate first-of-a-kind plant economics. Here's what the spreadsheets miss.</p>
+    </div>
+  </header>
+
+  <article class="post-content reveal">
+
+    <h2>The convergence problem</h2>
+    <p>If you read ten different green-hydrogen techno-economic studies published in the last two years, you'll notice something curious. The headline LCOH numbers cluster tightly — typically USD 3–5 per kilogram by 2030 — but the underlying assumptions span almost an order of magnitude on capex, capacity factor, and electrolyzer lifetime. The convergence isn't real; it's an artifact of analysts anchoring on each other's published numbers.</p>
+
+    <p>This matters because decisions are being made — about offtake contracts, sovereign hydrogen strategies, and multi-billion-dollar plant investments — on the basis of numbers that look more certain than they are. Let me walk through the three factors that I think dominate, and that most published TEAs handle poorly.</p>
+
+    <h2>Factor 1 — Stack degradation under realistic duty cycles</h2>
+    <p>Almost every published model assumes electrolyzer stack lifetime as a static number: 80,000 hours, or 10 years, often with a one-time replacement assumption. The reality is more brutal.</p>
+
+    <p>Stacks degrade as a function of:</p>
+    <ul>
+      <li><strong>Cycling</strong> — startups, shutdowns, and load-following from renewable input.</li>
+      <li><strong>Current density</strong> — running hotter to produce more per unit capex accelerates membrane and electrode wear.</li>
+      <li><strong>Feed-water purity</strong> — sub-spec water silently shortens life in ways that only show up in year three.</li>
+    </ul>
+
+    <p>A plant designed for 90% capacity factor on grid power behaves very differently from one designed for 35% capacity factor on a solar feedstock. The same capex, the same nameplate output, but the second plant replaces stacks roughly twice as often.</p>
+
+    <blockquote>
+      The error here isn't that analysts ignore degradation. It's that they treat it as a single number — when it's actually a function of how the plant is run.
+    </blockquote>
+
+    <h2>Factor 2 — Balance-of-plant cost trajectories</h2>
+    <p>The electrolyzer stack itself is the visible cost — the part everyone benchmarks and tracks. But for a complete green-hydrogen facility, the stack is typically <strong>only 25–35% of total installed capex</strong>. The rest is power electronics, water treatment, gas conditioning, compression, storage, civil works, and integration.</p>
+
+    <p>These costs are not falling at the same rate as the stack. Power electronics scale roughly with grid-scale inverter learning curves (slow). Civil works don't scale at all. Compression and storage costs are dominated by steel, copper, and labor — all of which are inflating, not deflating, in most jurisdictions in 2025.</p>
+
+    <p>When you decompose published cost-down trajectories, the often-cited "stack costs falling 50% by 2030" translates to a much more modest <strong>~20–25% reduction in total installed plant cost</strong>. That's the number that should be in the LCOH model.</p>
+
+    <h2>Factor 3 — First-of-a-kind premiums</h2>
+    <p>Almost no published TEA models a first-of-a-kind (FOAK) plant honestly. They model an <em>n</em>th-of-a-kind plant — one where the supply chain is mature, EPC contractors have built five of these, and bankability is solved.</p>
+
+    <p>FOAK plants pay a premium of <strong>30–60% on EPC, 50–100% on contingency, and 100–300 basis points on cost of capital</strong>. That premium doesn't disappear in a model; it disappears in the assumption that the model is describing a hypothetical future plant rather than the actual investment decision in front of you.</p>
+
+    <h2>What this means for decisions</h2>
+    <p>If you're evaluating a green-hydrogen investment, building a national strategy, or signing an offtake contract, the published LCOH numbers are a starting point — not an endpoint. Three questions to ask:</p>
+
+    <ol>
+      <li>Does the model treat stack lifetime as a function of duty cycle, or as a static number?</li>
+      <li>Does it disaggregate installed capex into stack vs. balance-of-plant, with appropriate learning curves on each?</li>
+      <li>Does it explicitly distinguish FOAK from NOAK economics?</li>
+    </ol>
+
+    <p>If the answer to any of these is no, the LCOH number is <strong>at least 30–50% too low</strong>. That's the gap between an attractive investment and an obvious one.</p>
+
+    <h2>Further reading</h2>
+    <p>I'll be publishing a more detailed framework on FOAK-vs-NOAK modeling in the <a href="../frameworks.html">Frameworks</a> section, with a downloadable spreadsheet structure. Sign up via the <a href="../contact.html">contact page</a> if you'd like to be notified.</p>
+
+  </article>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>Your Name</h4>
+        <p>Techno-economic analysis and commercialization strategy for emerging technologies.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../insights.html">Insights</a></li>
+          <li><a href="../frameworks.html">Frameworks</a></li>
+          <li><a href="../white-papers.html">White Papers</a></li>
+          <li><a href="../resources.html">Resources</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="#" target="_blank">LinkedIn</a></li>
+          <li><a href="#" target="_blank">Google Scholar</a></li>
+          <li><a href="#" target="_blank">X / Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Your Name. All rights reserved.</span>
+      <span>Built independently.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
