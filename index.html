@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Syed Haider · Technology Commercialization Leader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+  <!-- navbar injected by assets/site.js -->
+
+  <!-- ============ HERO ============ -->
+  <section class="section hero">
+    <h1>Bridging the Gap Between Deep-Tech Innovation and <span class="accent">Large-Scale Market Reality.</span></h1>
+    <p class="hero__lead">
+      A PhD-backed operator translating frontier science into deployable, bankable systems. I lead technical upscaling,
+      commercial due diligence, and pilot deployment across <b>energy storage, biotech, and advanced decarbonization</b>
+      — de-risking the path from lab proof-of-concept to commercial scale.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="insights.html">Explore Intelligence Hub <span>→</span></a>
+      <a class="btn btn--ghost" href="venture.html">Inquire for Advisory</a>
+    </div>
+
+    <!-- key metrics -->
+    <div class="stats">
+      <div><div class="num">$400M+</div><div class="lbl">Upscaling projects steered</div></div>
+      <div><div class="num">40+</div><div class="lbl">Deep-tech diligences run</div></div>
+      <div><div class="num">12</div><div class="lbl">Pilots to commercial scale</div></div>
+      <div><div class="num">3</div><div class="lbl">Sectors of active mandate</div></div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED INTELLIGENCE ============ -->
+  <section class="section wrap" style="padding-top:24px; padding-bottom:120px;">
+    <div class="feature-head">
+      <div class="title">Featured Intelligence</div>
+      <a href="insights.html">View all analysis →</a>
+    </div>
+    <div class="grid-2" id="featured"><!-- populated from articles.json --></div>
+  </section>
+
+  <!-- footer injected by assets/site.js -->
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/articles-index.js"></script>
+  <script>
+    /* Home shows the two most recent theses from window.ARTICLE_INDEX. */
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('featured');
+      const fmt = (iso) => new Date(iso + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+      const posts = (window.ARTICLE_INDEX || [])
+        .filter(a => a.category === 'thesis')
+        .sort((a, b) => b.date.localeCompare(a.date))
+        .slice(0, 2);
+      el.innerHTML = posts.map(a => `
+        <a class="card article" href="articles/${a.slug}.html" style="padding:30px;">
+          <div class="article__meta">
+            <span class="pill pill--thesis">${a.tag}</span>
+            <span class="article__date">${fmt(a.date)}</span>
+          </div>
+          <h3 class="article__title" style="font-size:21px;">${a.title}</h3>
+          <p class="article__summary justify" style="font-size:15px;">${a.summary}</p>
+          <span class="article__more">Read Analysis →</span>
+        </a>`).join('');
+    });
+  </script>
+</body>
+</html>

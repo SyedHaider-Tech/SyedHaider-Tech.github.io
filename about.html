@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Framework · Dr. Syed Haider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="about">
+
+  <!-- ============ NARRATIVE / EXECUTIVE PROFILE ============ -->
+  <section class="section wrap" style="padding:172px 40px 32px;">
+    <span class="eyebrow" style="font-size:clamp(26px,2.8vw,38px); font-weight:800; letter-spacing:-0.025em; text-transform:none;">About</span>
+  </section>
+
+  <section class="section wrap two-col" style="padding:20px 40px 96px;">
+    <div style="display:flex; flex-direction:column; gap:22px; font-size:17px; line-height:1.75; color:var(--ink-soft); text-align:justify; text-wrap:pretty;">
+      <p>My career began in the hard constraints of the physical world. A <b style="color:var(--ink)">PhD in Petroleum Engineering</b> trained me to reason about multiphase flow, thermodynamics, and the brutal economics of moving energy at scale — a discipline where a rounding error in the physics becomes a nine-figure error on the balance sheet.</p>
+      <p>That foundation became a bridge. Over the last decade I moved from research into operations, managing <b style="color:var(--ink)">multi-million-dollar upscaling projects</b> and steering corporate technology portfolios where the mandate was never "is this clever?" but "does this survive first contact with a commercial P&amp;L?"</p>
+      <p>Today I sit between the lab and the market. I run technical and commercial due diligence for investors, design scale-up strategy for founders, and advise C-suites on which deep-tech bets are real — separating genuine physics-backed advantage from narrative and subsidy dependence.</p>
+      <p>The through-line is simple: <b style="color:var(--gold)">rigor over hype.</b> Frontier innovation only matters if it can be built, financed, and deployed at the scale the world actually needs.</p>
+    </div>
+
+    <aside style="display:flex; flex-direction:column; gap:14px;">
+      <div class="panel">
+        <span class="panel__label">Domains of expertise</span>
+        <div class="bullets">
+          <div class="row"><span class="dot"></span><span>Grid-scale &amp; long-duration energy storage</span></div>
+          <div class="row"><span class="dot"></span><span>Industrial biotech &amp; synthetic biology</span></div>
+          <div class="row"><span class="dot"></span><span>Advanced decarbonization &amp; CCUS</span></div>
+          <div class="row"><span class="dot"></span><span>Pilot deployment &amp; system integration</span></div>
+        </div>
+      </div>
+      <div class="panel panel--accent">
+        <span class="panel__label">Credentials</span>
+        <div class="bullets">
+          <div class="row"><span class="dot"></span><span>PhD, Petroleum Engineering</span></div>
+          <div class="row"><span class="dot"></span><span>Ex-portfolio lead across KAUST &amp; NESR ecosystems</span></div>
+          <div class="row"><span class="dot"></span><span>Technical DD partner to energy &amp; deep-tech funds</span></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ============ THE EVALUATION FRAMEWORK ============ -->
+  <section class="section" style="border-top:1px solid var(--border); background:var(--surface);">
+    <div class="wrap" style="padding:72px 40px 80px;">
+      <div style="max-width:720px;">
+        <h2 class="h2" style="color:var(--gold)">A fixed, four-stage evaluation framework</h2>
+        <p class="justify" style="margin-top:20px; font-size:17px; line-height:1.65; color:var(--muted);">Every technology I back or advise on runs through the same proprietary sequence. Each gate must clear before the next opens — no stage is skipped, no stage is negotiable.</p>
+      </div>
+
+      <div style="margin-top:40px; display:flex; flex-direction:column;" id="stages"></div>
+      <div style="border-top:1px solid var(--border);"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section wrap" style="padding:96px 40px; text-align:center;">
+    <h2 class="h2" style="max-width:640px; margin:0 auto;">Have a technology that needs to clear the gauntlet?</h2>
+    <div style="display:flex; justify-content:center; gap:16px; margin-top:36px; flex-wrap:wrap;">
+      <a class="btn btn--primary" href="venture.html">Inquire for Advisory →</a>
+      <a class="btn btn--ghost" href="insights.html">Read the theses</a>
+    </div>
+  </section>
+
+  <script src="assets/js/site.js"></script>
+  <script>
+    /* Framework stages — edit this array to change the framework. */
+    const STAGES = [
+      { num: '01', title: 'Technical Feasibility & IP Vetting',
+        desc: 'Interrogating the science itself — from lab proof-of-concept to the physics of a physical pilot. Is the effect real, reproducible, and defensible? I pressure-test the core claims, patent moat, and the gap between bench data and a working system.',
+        tags: ['Proof-of-concept','Physics validation','IP & patent moat','Reproducibility'] },
+      { num: '02', title: 'Techno-Economic Modeling',
+        desc: 'Rigorous CapEx / OpEx unit economics built at commercial scale, not lab scale. I model the full cost stack, learning curves, and the price point at which the technology actually clears the market — no hand-waving on "costs will fall."',
+        tags: ['Unit economics','CapEx / OpEx','Cost-curve modeling','Bankability'] },
+      { num: '03', title: 'Engineering & Scale Hurdles',
+        desc: 'De-risking hardware deployment and the system-integration bottlenecks that kill most deep-tech. What breaks between 1x and 1000x? I map the balance-of-plant, supply constraints, and the engineering that has never been done at the target volume.',
+        tags: ['Scale-up risk','Balance-of-plant','System integration','Manufacturability'] },
+      { num: '04', title: 'Market & Policy Alignment',
+        desc: 'Grid-infrastructure readiness, supply chains, and subsidy mechanics. A technology can be perfect and still stranded. I assess the regulatory tailwind, offtake reality, and whether the ecosystem is ready to absorb it at scale.',
+        tags: ['Grid readiness','Supply chains','Subsidy mechanics','Offtake & policy'] },
+    ];
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('stages').innerHTML = STAGES.map(s => `
+        <div class="stage">
+          <div><span class="stage__badge"><span class="dot"></span>Stage ${s.num}</span></div>
+          <div>
+            <h3>${s.title}</h3>
+            <p class="justify">${s.desc}</p>
+            <div class="chips">${s.tags.map(t => `<span class="chip">${t}</span>`).join('')}</div>
+          </div>
+        </div>`).join('');
+    });
+  </script>
+</body>
+</html>
