@@ -131,7 +131,7 @@ p.justify { text-align: justify; text-wrap: pretty; }
 /* ---- Filter pills ---- */
 .filters { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 44px; }
 .filter { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; border-radius: 100px;
-  font-size: 18px; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all .18s;
+  font-size: 50px; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all .18s;
   background: transparent; color: var(--muted); border: 1px solid var(--border-2); font-family: inherit; }
 .filter:hover { border-color: var(--gold); color: var(--gold); }
 .filter.is-active { background: var(--navy); color: var(--bg); border-color: var(--navy); box-shadow: 0 6px 18px rgba(15,30,54,0.18); }
